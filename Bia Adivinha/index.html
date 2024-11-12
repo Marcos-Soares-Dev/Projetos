@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/index.js" defer></script>
+
+    <!-- Font Roboto: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Icones: -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Bia Adivinha</title>
+</head>
+<body>
+    <section id="app">
+        <div class="gameBox">
+            <div class="biaReactions">
+                <div class="title">
+                    <h1>Em que numero a <span>Bia</span> está pensando?</h1>
+                </div>
+
+                <div class="biaReact">
+                    <img src="./img/Initial.png" alt="bia">
+                </div>
+            </div>
+            
+            <div class="inputsBox">
+                <div class="heartIcon">                    
+                    <span class="material-icons heartIcon" >
+                        favorite
+                    </span>
+
+                    <p>Restantes: <span class="heartCount" id="heartCount">10</span></p>
+                </div>
+
+                <div class="attempInp">
+                    <input type="text"  maxlength="3" name="attemp" id="attempInp">
+                </div>
+
+                <div class="attemptBtn">
+                    <button type="button">Tentar!</button>
+                </div>
+            </div>
+
+            <div class="messagesBox">
+                <p id="messages"></p>
+            </div>
+
+            <div class="failedAttempts">
+               <p>Seus Palpites:</p>
+               <p id="failedAttempts"></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

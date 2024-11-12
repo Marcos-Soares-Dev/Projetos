@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;    
+}
+
+#app{
+    background-color: #de5540;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+
+    & .gameBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        gap: 2rem;
+        width: 40%;
+        background-color: #fff;
+        border-radius: 10px;
+    
+        & .biaReactions {
+            display: flex;
+            align-items: center;
+            justify-content: center;        
+            width: 100%;
+            font-size: clamp(2rem, 2vw, 3rem);
+    
+             & h1 span {
+                color: #ffb431;
+             }
+        }
+    
+        & .inputsBox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+    
+    
+            & .heartIcon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: .5rem;
+    
+                & .heartIcon {
+                    color: red;
+                }
+            }
+    
+            & .attempInp {            
+                width: auto;;
+    
+                & input {
+                    text-align: center;
+                    font-size: 22px;
+                    width: 3rem;
+                    height: 2rem;                
+                    border: 1px solid #de5540;
+                    appearance: none;
+                    
+                }
+            }
+    
+            & .attemptBtn{
+                width: auto;
+    
+                & button {
+                    background-color: #de5540;
+                    color: #fff;
+                    padding: .5rem 1rem;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: ease 0.3s;
+    
+                    &:hover {
+                        filter: brightness(0.8);
+                    }
+                }
+                
+            }
+        }
+
+        & .messagesBox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            & #messages {
+                text-align: center;
+            }
+        }
+
+        & .failedAttempts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            & p {
+                text-align: center;
+            }
+        }
+    
+    }
+}
+
+
