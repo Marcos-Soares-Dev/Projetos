@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>Quiz Interativo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Interativo</h1>
+    <form id="quizForm">
+        <!-- Pergunta 1 -->
+        <div class="question">
+            <p><strong>1. O que a função `Number(prompt())` faz?</strong></p>
+            <label><input type="radio" name="q1" value="a"> a) Exibe uma mensagem na tela.</label><br>
+            <label><input type="radio" name="q1" value="b"> b) Converte a entrada do usuário para um número.</label><br>
+            <label><input type="radio" name="q1" value="c"> c) Verifica se um número é maior ou menor que 10.</label><br>
+            <label><input type="radio" name="q1" value="d"> d) Armazena o valor digitado pelo usuário como uma string.</label>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question">
+            <p><strong>2. O que o método `.toLowerCase()` faz com uma string?</strong></p>
+            <label><input type="radio" name="q2" value="a"> a) Verifica se a string é um número.</label><br>
+            <label><input type="radio" name="q2" value="b"> b) Converte todas as letras para maiúsculas.</label><br>
+            <label><input type="radio" name="q2" value="c"> c) Converte todas as letras para minúsculas.</label><br>
+            <label><input type="radio" name="q2" value="d"> d) Compara strings automaticamente.</label>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question">
+            <p><strong>3. Qual é o resultado do código abaixo se o usuário digitar "B" no `prompt`?</strong></p>
+            <code>
+                const userLetter = prompt("Informe uma letra").toLowerCase();<br>
+                if (userLetter == "a") {<br>
+                &nbsp;&nbsp;alert("A letra digitada foi A");<br>
+                } else {<br>
+                &nbsp;&nbsp;alert("Letra errada, tente novamente");<br>
+                }
+            </code>
+            <br>
+            <label><input type="radio" name="q3" value="a"> a) A letra digitada foi A.</label><br>
+            <label><input type="radio" name="q3" value="b"> b) Letra errada, tente novamente.</label><br>
+            <label><input type="radio" name="q3" value="c"> c) Nenhuma mensagem será exibida.</label><br>
+            <label><input type="radio" name="q3" value="d"> d) O código apresentará erro.</label>
+        </div>
+
+        <!-- Botão -->
+        <button type="button" onclick="submitQuiz()">Enviar Respostas</button>
+    </form>
+
+    <p id="result"></p>
