@@ -13,12 +13,24 @@
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        "sans": ["Cutive Mono", "monospace"]
+                    }
+                }
+            }
+        }
+    </script>
+
     <script src="./script/index.js" defer></script>
     <title>Seu nome de DEV</title>
 </head>
 <body>
     <main>
-        <section id="container">
+        <section id="container" class="bg-black">
             <div id="banner">
 
             </div>
