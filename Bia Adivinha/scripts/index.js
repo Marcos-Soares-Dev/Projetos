@@ -24,7 +24,7 @@ const checkHeartCount = () => {
         O número que a Bia pensou era: ${biaNumber}`
         attempInp.disabled = true
         attemptBtn.disabled = true
-        biaReact.src = './img/fail.png'
+        biaReact.src = './img/Fail.png'
     } 
 }
 
