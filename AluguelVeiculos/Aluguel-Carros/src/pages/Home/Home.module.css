@@ -1,0 +1,58 @@
+.homeContainer {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .catalog {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .carCard {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  } 
+  
+  .detailsButton:hover,
+  .rentButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .filters {
+    flex: 1;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .filters h2 {
+    margin-bottom: 20px;
+  }
+  
+  .filterButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .filterButton:hover {
+    background-color: #0056b3;
+  }

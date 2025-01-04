@@ -1,0 +1,21 @@
+.carCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+.carCard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.carImage {
+  width: 13vw;
+  height: 15vh;
+  border-radius: 8px;
+  object-fit: cover;
+}

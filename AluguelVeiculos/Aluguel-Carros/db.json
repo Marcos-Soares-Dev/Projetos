@@ -1,0 +1,84 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Toyota Corolla",
+      "price": 150,
+      "image": "/Kia Forte.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Honda Civic",
+      "price": 160,
+      "image": "/civic.webp"
+    },
+    {
+      "id": 3,
+      "name": "Ford Focus",
+      "price": 140,
+      "image": "/focus.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Chevrolet Cruze",
+      "price": 155,
+      "image": "/Chevrolet Cruze.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Volkswagen Jetta",
+      "price": 165,
+      "image": "/Volkswagen Jetta.webp"
+    },
+    {
+      "id": 6,
+      "name": "Hyundai Elantra",
+      "price": 150,
+      "image": "/Hyundai Elantra.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Nissan Sentra",
+      "price": 145,
+      "image": "/Nissan Sentra.webp"
+    },
+    {
+      "id": 8,
+      "name": "Mazda 3",
+      "price": 160,
+      "image": "/Mazda 3.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Kia Forte",
+      "price": 140,
+      "image": "/Kia Forte.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Subaru Impreza",
+      "price": 155,
+      "image": "Subaru Impreza.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@email.com",
+      "password": "123456"
+    },
+    {
+      "id": "fa51",
+      "name": "edi",
+      "email": "edi@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "22c8",
+      "name": "joao",
+      "email": "joao@email.com",
+      "password": "123"
+    }
+  ]
+}
