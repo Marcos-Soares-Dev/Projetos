@@ -68,6 +68,20 @@
       "email": "edigle@gmail.com",
       "password": "123",
       "carsRented": []
+    },
+    {
+      "id": "8583",
+      "name": "teste",
+      "email": "teste@email.com",
+      "password": "123",
+      "carsRented": []
+    },
+    {
+      "id": "23b1",
+      "name": "edi",
+      "email": "edi@email.com",
+      "password": "123",
+      "carsRented": []
     }
   ]
 }
