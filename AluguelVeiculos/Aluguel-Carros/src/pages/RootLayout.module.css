@@ -53,6 +53,13 @@ header {
     border-radius: 0.25rem;
     cursor: pointer;
   }
+
+  nav span {
+    margin-left: 1rem;
+    font-size: 1rem;    
+  }
+
+ 
   
   main {
     padding: 2rem;

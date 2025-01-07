@@ -1,37 +1,51 @@
 import { Link, Outlet } from "react-router-dom";
 import styles from "./RootLayout.module.css";
+import { useEffect, useState } from "react";
 
 export default function RootLayout() {
-  return (
-    <>
-      <header className={styles.header}>
-        <div className={styles.logoBrand}>
-          <Link to="/">Localiza</Link>
-        </div>
+    const [loggedInUser, setLoggedInUser] = useState(null);
 
-        <div className={styles.searchBar}>
-          <input type="text" placeholder="Procure seu veiculo pelo modelo" />
-          <button>Buscar</button>
-        </div>
+    useEffect(() => {
+        const user = sessionStorage.getItem('loggedInUser');
+        if (user) {
+            setLoggedInUser(JSON.parse(user));
+        }
+    }, []);
 
-        <nav>
-          <Link to="/">Início</Link>
-          <Link to="/login">
-            <button>Login/Cadastro</button>
-          </Link>
-        </nav>
-      </header>
+    return (
+        <>
+            <header className={styles.header}>
+                <div className={styles.logoBrand}>
+                    <Link to="/">Localiza</Link>
+                </div>
 
-      <main className={styles.main}>
-        <Outlet />
-      </main>
+                <div className={styles.searchBar}>
+                    <input type="text" placeholder="Procure seu veiculo pelo modelo" />
+                    <button>Buscar</button>
+                </div>
 
-      <footer className={styles.footer}>
-        <p>Localiza</p>
-        <p>Aluguel de carros</p>
-        <p>Endereço: Rua dos Bobos, nº 0</p>
-        <p>Telefone: (00) 0000-0000</p>
-      </footer>
-    </>
-  );
+                <nav>
+                    <Link to="/">Início</Link>
+                    {loggedInUser ? (
+                        <span>Bem-vindo, {loggedInUser.name}</span>
+                    ) : (
+                        <Link to="/login">
+                            <button>Login/Cadastro</button>
+                        </Link>
+                    )}
+                </nav>
+            </header>
+
+            <main className={styles.main}>
+                <Outlet />
+            </main>
+
+            <footer className={styles.footer}>
+                <p>Localiza</p>
+                <p>Aluguel de carros</p>
+                <p>Endereço: Rua dos Bobos, nº 0</p>
+                <p>Telefone: (00) 0000-0000</p>
+            </footer>
+        </>
+    );
 }

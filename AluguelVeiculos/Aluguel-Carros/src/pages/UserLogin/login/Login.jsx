@@ -18,15 +18,14 @@ export default function Login() {
             }
             const users = await response.json();
 
-            // Verifique se os dados estão sendo retornados corretamente
-            console.log('Usuários retornados:', users);
-
             const user = users.find(user => user.name === name && user.password === password);
 
             if (user) {
                 // Usuário encontrado
+                sessionStorage.setItem('loggedInUser', JSON.stringify(user));
                 alert(`Bem vindo, ${user.name}!`);
                 navigate('/');
+                window.location.reload(); // Força a recarga da página para atualizar o estado do usuário logado
             } else {
                 // Usuário não encontrado
                 setError('Usuário ou senha inválidos');
