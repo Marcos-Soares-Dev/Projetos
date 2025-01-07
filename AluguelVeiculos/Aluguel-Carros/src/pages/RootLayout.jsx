@@ -27,7 +27,9 @@ export default function RootLayout() {
                 <nav>
                     <Link to="/">Início</Link>
                     {loggedInUser ? (
-                        <span>Bem-vindo, {loggedInUser.name}</span>
+                        <Link to="/userInfo">
+                            <span>Bem-vindo, {loggedInUser.name}</span>
+                        </Link>
                     ) : (
                         <Link to="/login">
                             <button>Login/Cadastro</button>

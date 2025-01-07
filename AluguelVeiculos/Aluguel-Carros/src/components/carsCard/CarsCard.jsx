@@ -10,13 +10,17 @@ export default function CarsCard({ car }) {
         navigate(`/cars/${car.id}`);
     };
 
+    const handleRentClick = () => {
+        navigate(`/cars/${car.id}`);
+    };
+
     return (
         <div className={styles.carCard}>
             <img src={car.image} alt={car.name} className={styles.carImage} />
             <h3>{car.name}</h3>
             <p>R$ {car.price}/dia</p>
             <ButtonPrimary onClick={handleDetailsClick}>Ver Detalhes</ButtonPrimary>
-            <ButtonPrimary>Alugar</ButtonPrimary>
+            <ButtonPrimary onClick={handleRentClick}>Alugar</ButtonPrimary>
         </div>
     );
 }

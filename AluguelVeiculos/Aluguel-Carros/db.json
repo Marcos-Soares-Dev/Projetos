@@ -4,61 +4,71 @@
       "id": "1",
       "name": "Toyota Corolla",
       "price": 150,
-      "image": "/Kia Forte.jpeg"
+      "image": "/Kia Forte.jpeg",
+      "rented": false
     },
     {
       "id": "2",
       "name": "Honda Civic",
       "price": 160,
-      "image": "/civic.webp"
+      "image": "/civic.webp",
+      "rented": false
     },
     {
       "id": "3",
       "name": "Ford Focus",
       "price": 140,
-      "image": "/focus.jpg"
+      "image": "/focus.jpg",
+      "rented": false
     },
     {
       "id": "4",
       "name": "Chevrolet Cruze",
       "price": 155,
-      "image": "/Chevrolet Cruze.jpg"
+      "image": "/Chevrolet Cruze.jpg",
+      "rented": false
     },
     {
       "id": "5",
       "name": "Volkswagen Jetta",
       "price": 165,
-      "image": "/Volkswagen Jetta.webp"
+      "image": "/Volkswagen Jetta.webp",
+      "rented": false
     },
     {
       "id": "6",
       "name": "Hyundai Elantra",
       "price": 150,
-      "image": "/Hyundai Elantra.jpg"
+      "image": "/Hyundai Elantra.jpg",
+      "rented": false
     },
     {
       "id": "7",
       "name": "Nissan Sentra",
       "price": 145,
-      "image": "/Nissan Sentra.webp"
+      "image": "/Nissan Sentra.webp",
+      "rented": false
     },
     {
       "id": "8",
       "name": "Mazda 3",
       "price": 160,
-      "image": "/Mazda 3.jpg"
+      "image": "/Mazda 3.jpg",
+      "rented": false
     },
     {
       "id": "9",
       "name": "Kia Forte",
       "price": 140,
-      "image": "/Kia Forte.jpeg"
+      "image": "/Kia Forte.jpeg",
+      "rented": false
     },
     {
       "id": "10",
       "name": "Subaru Impreza",
       "price": 155,
-      "image": "Subaru Impreza.jpg"
+      "image": "Subaru Impreza.jpg",
+      "rented": false
     }
   ],
   "users": [

@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import CarsCard from '../../components/carsCard/CarsCard';
 import styles from './Home.module.css';
 
@@ -6,9 +6,13 @@ export default function Home() {
     const [cars, setCars] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/cars') // Substitua pelo endpoint correto da sua API
+        fetch('http://localhost:3000/cars')
             .then(response => response.json())
-            .then(data => setCars(data))
+            .then(data => {
+                // Filtrar carros que não estão alugados
+                const availableCars = data.filter(car => !car.rented);
+                setCars(availableCars);
+            })
             .catch(error => console.error('Erro ao buscar dados:', error));
     }, []);
 
