@@ -20,6 +20,7 @@ export default function Register() {
             name,
             email,
             password,
+            carsRented: [],
         };
 
         try {
