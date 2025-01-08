@@ -1,85 +1,83 @@
-/* src/pages/RootLayout.module.css */
-
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 8vw;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
-  }
-  
-  .logoBrand a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #343a40;
-    text-decoration: none;
-  }
-  
-  .searchBar {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .searchBar input {
-    padding: 0.5rem;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-  }
-  
-  .searchBar button {
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
-  
-  nav a {
-    margin-left: 1rem;
-    font-size: 1rem;
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  nav button {
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 8vw;
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #333;
+}
 
-  nav span {
-    margin-left: 1rem;
-    font-size: 1rem;    
-  }
+.logoBrand a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e0e0e0;
+  text-decoration: none;
+}
 
- 
-  
-  main {
-    padding: 2rem;
-  }
-  
-  footer {
-    padding: 1rem 2rem;
-    background-color: #f8f9fa;
-    border-top: 1px solid #dee2e6;
-    text-align: center;
-  }
-  
-  footer p {
-    margin: 0.5rem 0;
-    color: #6c757d;
-  }
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
-  main {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    gap: 1rem;
-  }
+.searchBar input {
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.searchBar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+nav a {
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+nav button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+nav span {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  padding: 1rem 2rem;
+  background-color: #1f1f1f;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  color: #6c757d;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 1rem;
+}

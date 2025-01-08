@@ -1,13 +1,14 @@
 .carCard {
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   border-radius: 8px;
   padding: 10px;
   width: 200px;
   text-align: center;
-  background-color: #fff;
+  background-color: #1f1f1f;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
 }
+
 .carCard:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
