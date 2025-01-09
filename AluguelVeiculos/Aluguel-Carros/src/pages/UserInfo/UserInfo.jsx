@@ -28,7 +28,7 @@ export default function UserInfo() {
 
     const handleReturnCar = async (carId) => {
         try {
-            // Atualizar o carro para indicar que não está mais alugado
+            
             const updatedCar = { ...cars.find(car => car.id === carId), rented: false };
             await fetch(`http://localhost:3000/cars/${carId}`, {
                 method: 'PUT',

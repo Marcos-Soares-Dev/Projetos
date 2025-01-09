@@ -24,7 +24,7 @@ export default function CarDetails() {
         }
 
         try {
-            // Atualizar o carro para indicar que está alugado
+            
             const updatedCar = { ...car, rented: true };
             await fetch(`http://localhost:3000/cars/${id}`, {
                 method: 'PUT',
@@ -34,7 +34,7 @@ export default function CarDetails() {
                 body: JSON.stringify(updatedCar),
             });
 
-            // Atualizar o usuário para adicionar o carro alugado
+            
             const updatedUser = { ...loggedInUser, carsRented: [...loggedInUser.carsRented, car.id] };
             await fetch(`http://localhost:3000/users/${loggedInUser.id}`, {
                 method: 'PUT',

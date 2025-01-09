@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         element: <UserInfo />,
       },
       {
-        path: "/cars/:id", // Adicione a nova rota
+        path: "/cars/:id", 
         element: <CarDetails />,
       },
     ],

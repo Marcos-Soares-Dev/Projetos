@@ -9,7 +9,7 @@ export default function Home() {
         fetch('http://localhost:3000/cars')
             .then(response => response.json())
             .then(data => {
-                // Filtrar carros que não estão alugados
+                
                 const availableCars = data.filter(car => !car.rented);
                 setCars(availableCars);
             })
@@ -28,7 +28,7 @@ export default function Home() {
                 <h2>Filtros</h2>
                 <button className={styles.filterButton}>Mais Baratos</button>
                 <button className={styles.filterButton}>Mais Novos</button>
-                {/* Adicione mais filtros conforme necessário */}
+                
             </div>
         </div>
     );
