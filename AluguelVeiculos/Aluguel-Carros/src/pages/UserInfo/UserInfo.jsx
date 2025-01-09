@@ -38,7 +38,7 @@ export default function UserInfo() {
                 body: JSON.stringify(updatedCar),
             });
 
-            // Atualizar o usuário para remover o carro devolvido
+            
             const updatedUser = { ...user, carsRented: user.carsRented.filter(id => id !== carId) };
             await fetch(`http://localhost:3000/users/${user.id}`, {
                 method: 'PUT',

@@ -45,6 +45,7 @@ export default function CarDetails() {
             });
 
             sessionStorage.setItem('loggedInUser', JSON.stringify(updatedUser));
+            alert('Carro alugado com sucesso!');
             navigate('/');
         } catch (error) {
             console.error('Erro ao alugar o carro:', error);
