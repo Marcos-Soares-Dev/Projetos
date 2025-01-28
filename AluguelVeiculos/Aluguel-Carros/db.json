@@ -92,6 +92,13 @@
       "email": "edi@email.com",
       "password": "123",
       "carsRented": []
+    },
+    {
+      "id": "f472",
+      "name": "test",
+      "email": "test@email.com",
+      "password": "123",
+      "carsRented": []
     }
   ]
 }
